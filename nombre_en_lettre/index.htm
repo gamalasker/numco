@@ -1,0 +1,54 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>TEST NOMBRE EN LETTRE</title>
+<style type="text/css">
+html {
+	background:#242424;
+}
+.auto-style1 {
+	text-align: right;
+	font-family: "GE SS Two Medium";
+	font-size: x-large;
+	color: #FFFFFF;
+}
+.auto-style2 {
+	text-align: center;
+	font-family: "GE SS Two Medium";
+	font-size: x-large;
+	color: #FFFFFF;
+}
+.auto-style3 {
+	text-align: center;
+}
+.auto-style4 {
+	text-align: center;
+	font-size: xx-large;
+	font-family: Montserrat;
+	color: #CEA2A2;
+}
+</style>
+</head>
+
+<body>
+	<div class="auto-style3">
+	<script language="javascript" src="nombre_en_lettre.js"></script>
+	<script language="javascript">
+	
+		function keyUpHandler(obj){
+			document.getElementById("conversion").firstChild.nodeValue	=	NumberToLetter(obj.value)
+		}//fin de keypressHandler
+		
+	</script>
+	<div style="margin:10px" class="auto-style2">&#1571;&#1603;&#1578;&#1576; &#1575;&#1604;&#1585;&#1602;&#1605;</div>
+	<input style="padding:10px" name="montant" id="montant" type="text" size="50" onKeyUp=" keyUpHandler(this)">
+		<p>&nbsp;</p>
+		<div class="auto-style1">
+			&#1575;&#1604;&#1606;&#1578;&#1610;&#1580;&#1577;</div>
+	<div id="conversion" style="padding:10px;color:white;font-size:20px;border-color:gold;border-width:3px;border-style:solid">&nbsp;</div>
+	</div>
+	<a href="https://www.gamalasker.com" rel="nofollow"><p class="auto-style4">© 2020 Gamal Asker</p></a>
+</body>
+</html>
